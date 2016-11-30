@@ -6,7 +6,7 @@ tar -xvf $filename
 rm -rf $filename
 
 cd ./Python-2.7.12
-./configure
+./configure --enable-shared --with-ensurepip=install --prefix=/usr/local/lib/python-2.7.12
 make
 make install
 cd ../
@@ -17,7 +17,7 @@ wget $url_3
 tar -xvf $filename
 rm -rf $filename
 cd ./Python-3.5.2
-./configure --with-ensurepip=upgrade
+./configure --enable-shared --with-ensurepip=install
 make
 make test
 make altinstall 
