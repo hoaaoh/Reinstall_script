@@ -17,8 +17,8 @@ wget $url_3
 tar -xvf $filename
 rm -rf $filename
 cd ./Python-3.5.2
-./configure --enable-shared --with-ensurepip=install
-make
+./configure --enable-shared --with-ensurepip=install --enable-ipv6 
+LD_RUN_PATH=/usr/local/lib make
 make test
 make altinstall 
 cd ../
