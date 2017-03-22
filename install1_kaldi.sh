@@ -10,6 +10,7 @@ make -j 8
 cd ..
 ### src ### 
 cd src
+./configure --shared
 make depend -j 8
 make -j 8
-
+cd ..
